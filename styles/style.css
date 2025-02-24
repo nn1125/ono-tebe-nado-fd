@@ -102,18 +102,7 @@
     word-spacing: 16px;
     color:#fff;
 }
-.desc_first {
-    letter-spacing: 0%;
-}
-.desc_sec {
-    letter-spacing: 90%;
-}
-.desc_third {
-    letter-spacing: 80%;
-}
-.desc_four {
-    letter-spacing: 110%;
-}
+
 .bet-button {
     width: 256px;
     height: 51px;
@@ -205,7 +194,7 @@
     margin-left: 40px;
 }
 .pic_card_second {
-    width: 254px;
+    width: 256px;
     height: 264px;
     margin-top: 126px;
     margin-left: 40px;
@@ -304,8 +293,8 @@
     text-decoration-line: none;
     font-weight: 400;
     font-size: 18px;
-    font-family: Raleway,sans-serif;
     line-height: 24.3px;
+    font-style: normal;
 }
 .spec {
     text-decoration: none;
