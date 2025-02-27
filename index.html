@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=fonts href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
@@ -13,9 +13,9 @@
     <header class="header">
         <nav class="header_menu">
           <ul class="header_menu_list">
-            <li class="menu_item_first">главная</li>
-            <li class="menu_item_second"><a href="0">посмотреть лоты</a></li>
-            <li class="menu_item_third"><a href="0">об аукционе</a></li>
+            <li class="menu_item menu_item_no-bullit"><a class="menu_link_active" href="0">главная</a></li>
+            <li class="menu_item"><a class="menu_link" href="0">посмотреть лоты</a></li>
+            <li class="menu_item"><a class="menu_link" href="0">об аукционе</a></li>
           </ul>
         </nav>
       <div class="header_logo">
@@ -31,43 +31,53 @@
     </header>
     <main>
       <section class="cover">
+        <div class="overlay"></div>
           <h1 class="title_cover">
             <span class="aligned-text_left">ОНО</span>
             <span class="aligned-text_center">ТЕБЕ</span>
             <span class="aligned-text_right">НАДО</span>
           </h1>
           <div class="description_cover">
-            <p><span class="desc_first">Аукцион вещей, </span><span class="desc_sec">в которые</span><span class="desc_third"> никто</span><span class="desc_four"> не верил</span></p>
+            <p>Аукцион вещей, в которые никто не верил</p>
             <button class="bet-button">Сделать ставку</button>
           </div>
       </section>
       <section class="lots">
         <h2 class="title_lots">ЛОТЫ</h2>
         <div class="lots_card_list">
-          <div class="film_card">
-            <div class="film_card_first">
-               <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+          <a href="0" class="card_link">
+            <div class="card film_card">
+              <div class="overlay"></div>
+              <div class="text_high">
+                <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+              </div>
+              <div class="film_card_down">
+                <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </div>
             </div>
-            <div class="film_card_second">
-               <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+          </a>
+          <a href="0" class="card_link">
+            <div class="card book_card">
+              <div class="overlay"></div>
+              <div class="text_high">
+                <h3 class="card-title">Книга, где описан один скучный день <br>из жизни <br>рекламного агента</h3>
+              </div>
+              <div class="book_card_down">
+                <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </div>
             </div>
-          </div>
-          <div class="book_card">
-            <div class="book_card_first">
-              <h3 class="card-title">Книга, где описан один скучный день <br>из жизни <br>рекламного агента</h3>
+          </a>
+          <a href="0" class="card_link">
+            <div class="card pic_card">
+              <div class="overlay"></div>
+              <div class="text_high">
+                <h3 class="card-title">Картина, которую повторит даже 5-летний сын<br>маминой подруги</h3>
+              </div>
+              <div class="pic_card_down">
+                <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили,<br> если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </div>
             </div>
-            <div class="book_card_second">
-              <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-            </div>
-          </div>
-          <div class="pic_card">
-            <div class="pic_card_first">
-              <h3 class="card-title">Картина, которую повторит даже 5-летний сын<br>маминой подруги</h3>
-            </div>
-            <div class="pic_card_second">
-              <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили,<br> если бы не знали, что это — одна из революционных работ Кандинского?</p>
-            </div>
-          </div>
+          </a>
         </div>
         <span class="more"><a href="0">посмотреть больше</a></span>
       </section>
@@ -78,12 +88,11 @@
         <div class="about_column">
           <h2 class="title_about">Об аукционе</h2>
           <div class="text_about">
-            <div class="first_part_text">
+            <div class="high_part_text">
                <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
             </div>
-            <div class="second_part_text">
-              <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p> 
+            <div class="down_part_text">
+              <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br>на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p> 
             </div>
           </div>
         </div>
@@ -99,26 +108,26 @@
       </address>
       <nav class="footer-menu">
         <ul class="footer-menu-list">
-          <li class="footer-menu-list_item_first">главная</li>
-          <li class="footer-menu-list_item_second">посмотреть лоты</li>
-          <li class="footer-menu-list_item_third">об аукционе</li>
+          <li class="menu_item menu_item_no-bullit"><a class="menu_link_active" href="0">главная</a></li>
+          <li class="menu_item menu_item_no-bullit"><a class="menu_link" href="0">посмотреть лоты</a></li>
+          <li class="menu_item menu_item_no-bullit"><a class="menu_link" href="0">об аукционе</a></li>
         </ul>
       </nav>
       <div class="icons">
         <ul class="footer-social-list">
           <li class="footer-social-list_item">
             <a href="0" class="footer-social-link">
-              <img class="icon" src="/images/yt.svg" alt="Ютуб">
+              <img class="icon" src="images/yt.svg" alt="Ютуб">
             </a>
           </li>
           <li class="footer-social-list_item">
             <a href="0" class="footer-social-link">
-              <img class="icon" src="/images/vk.svg" alt="ВК">
+              <img class="icon" src="images/vk.svg" alt="ВК">
             </a>
           </li>
           <li class="footer-social-list_item">
             <a href="0" class="footer-social-link">
-              <img class="icon" src="/images/pinterest.svg" alt="Пинтерест">
+              <img class="icon" src="images/pinterest.svg" alt="Пинтерест">
             </a>
           </li>
        </ul>
